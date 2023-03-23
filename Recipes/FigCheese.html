@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+Recipe Page (Fig Cheese Salad)
+FigCheese.html
+
+Amy Anderson
+40542677
+
+Web Tech Coursework
+-->
+<html>
+<head>
+	<title>Eat Your Greens - Fig and Goats Cheese Salad</title>
+	<link rel="stylesheet" href="../stylesheet.css"/>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+<body>
+	<section class="stickyContent">
+	<header>
+		<div class="headerContainer">
+			<img class="logo" src="../Images/logo.png" alt="Picture showcasing Eat your Greens logo">
+		</div>
+	</header>
+	
+	<nav>
+		<ul class="navbar">
+			<li><a href="../index.html" class="navlink">Home</a></li>
+			<li><a href="../About.html" class="navlink">About</a></li>
+			<li>
+				<div class="dropdown">
+					<p class="dropdownLabel">Recipe Categories</p>
+					<div class="dropdownContent">
+						<table>
+							<tr>
+								<td><a href="../Categories/Salads.html">Salad & Stir-Fry</a></td>
+								<td><a href="../Categories/Soups.html">Soup & Stew</a></td>
+							</tr>
+							<tr>
+								<td><a href="../Categories/Pasta.html">Fresh Pasta</a></td>
+								<td><a href="../Categories/Curry.html">Curry & Chilli</a></td>
+							</tr>
+							<tr>
+								<td><a href="../Categories/Pies.html">Pie & Pastry</a></td>
+								<td><a href="../Categories/Treats.html">Sweet Treats</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</nav>
+	</section>
+	<main>
+		<!--image of dish-->
+		<img src="../Images/FigCheese.jpg" class="recipeImage">
+		
+		<article class="recipeDesc">
+			<!--main headline for page-->
+			<h1>Fig & Goats Cheese Salad</h1>
+			<div class="starContainer">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+			</div>
+			<br/>
+			
+			<!--return button to category page-->
+			<div id="backButton">
+			<img src="../Images/Arrow.png" class="backIcon">
+			<p>Back to <a href="../Categories/Salads.html">Quick Salad's & Stir-Frys</a></p>
+			</div>
+			<br/>
+			
+			<!--description of recipe-->
+			<p>A nutritional powerhouse disguised as a punchy salad. Adapt as you like, but it’s 
+			worth knowing that goat’s cheese, sesame seeds, sugar snaps and, perhaps most surprisingly, 
+			figs, all contain calcium, which helps support your bones and teeth.</p>
+			<br/>
+			
+			<!--important information-->
+			<ul class="recipeInfoList">
+				<li>Preparation Time: <em>15 minutes</em></li>
+				<li>Cooking Time: <em>5 minutes</em></li>
+				<li>Serves: <em>4</em></li>
+				<li>Difficulty: <em>Beginner</em></li>
+			</ul>
+			
+			<button class="nutritionButton" type="button" onclick="nutritionInfo()">Nutritional Information</button>
+		</article>
+		
+		<div class="line">
+			<br/>
+		</div>
+		
+		<section class="recipeContainer">
+			<div class="methodBox">
+				<h3>Method</h3>
+				<p>1. Start by making the salad dressing. In a lidded jar, briskly shake together 
+				the chopped mint, 1 tbsp olive oil, the red wine vinegar, honey and 1 tbsp water; 
+				season and set aside.</p>
+				<p>2. Put a large griddle or frying pan over a high heat. Separately toss the sugar 
+				snap peas and halved figs with 1 tsp oil each. Spread the sugar snaps out in a single 
+				layer in the hot pan, leaving to cook for 1-2 minutes until charred in places. Shake 
+				the pan to turn, then cook for a further minute. Transfer to a plate. Repeat with 
+				the figs, placing them in the pan cut-side down and cooking for about 1 minute before 
+				turning and cooking for a further minute. Add to the plate of sugar snaps.</p>
+				<p>3. In a large bowl or on a serving platter, toss together the toasted sesame seeds, 
+				pea shoots, the dressing and a few extra mint leaves. Scatter over the sugar snaps, 
+				figs and the goat's cheese. Serve with a slice or two of toasted sourdough bread on 
+				the side, if liked, to make the salad more substantial.</p>
+				
+				<br/>
+				
+				<!-- audio - voice of method spoken -->
+				<audio controls>
+					<source src=".ogg" type="audio/ogg">
+					<source src=".mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div>
+				<h3>Ingredients</h3>
+				<ul>
+					<li><strong>25g</strong> pack mint, finely chopped</li>
+					<li><strong>1tbsp</strong> extra virgin olive oil</li>
+					<li><strong>1tbsp</strong> red wine vinegar</li>
+					<li><strong>2tsp</strong> clear honey</li>
+					<li><strong>200g</strong> sugar snap peas</li>
+					<li><strong>8 figs</strong>, halved</li>
+					<li><strong>80g</strong> pack pea shoots</li>
+					<li><strong>1tbsp</strong> sesame seeds, toasted</li>
+					<li><strong>125g</strong> soft goat's cheese, sliced</li>
+					<li>Sourdough bread, to serve (optional)</li>
+				</ul>
+			</div>
+		</section>
+		
+		<div class="line">
+			<br/>
+		</div>
+		
+		<!--Information about the chef's responsible-->
+		<img src="../Images/Chef.png" class="chefImage">
+		<article class="chefDesc">
+			<h3>Chef Michael Longlea</h3>
+			<p>London-based chef Michael Longlea has been developing his skills in exquisite vegetarian
+			cuisine since his early days in India where 38% of the population are vegetarians. 
+			With a passion for creativity using traditional flavours with a modern twist, he has 
+			established himself as a Michelin star chef.</p>
+			<p>His recipes here at Eat Your Greens help those following vegetarianism get the all
+			importnat nutrients they need, whilst creating these fresh and flavoursome meals.</p>
+		</article>
+		
+		<!-- Nutritional Information Overlay-->
+		<div id="overlay" onclick="hideOverlay()">
+			<table class="nutritionInfoTable">
+				<tr><td><h1 style="margin-top:-5px;">Nutritional Information</h1></td></tr>
+				<tr><td><em>PER SERVING</em></td></tr>
+				<tr><td>Energy</td><td>960kJ/231kcals</td></tr>
+				<tr><td>Fat</td><td>14g</td></tr>
+				<tr><td>Saturated Fat</td><td>5.4g</td></tr>
+				<tr><td>Carbohydrates</td><td>16g</td></tr>
+				<tr><td>Sugars</td><td>15g</td></tr>
+				<tr><td>Fibre</td><td>4.1g</td></tr>
+				<tr><td>Protein</td><td>8.1g</td></tr>
+				<tr><td>Salt</td><td>0.2g</td></tr>
+				<tr><td><em>Click outside to return</em></td></tr>
+			</table>
+		</div>
+	</main>
+	
+	<footer>
+		<section>
+			<ul class="footerList">
+				<li><strong>Partnership</strong></li>
+				<li>Websites</li>
+				<li>Social Media</li>
+				<li>Blogs</li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>About</strong></li>
+				<li>Eat Your Greens</li>
+				<li><a href="https://vegsoc.org/info-hub/definition/">Vegetarianism</a></li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>Documents</strong></li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		
+			<img src="../Images/whiteLogo.png">
+			
+			<div>
+				<br/>
+			</div>
+		
+			<p> &copy All rights reserved 2023 </p>
+			<p>Want to send in your own recipes? Submit them <a href="../SubmitRecipes.html">here</a></p>
+			
+		</section>
+	</footer>
+	
+	<!--javascript for this page-->
+	<script>
+		function nutritionInfo(){
+			document.getElementById("overlay").style.display = "block";
+		}
+		
+		function hideOverlay(){
+			document.getElementById("overlay").style.display = "none";
+		}
+		
+	</script>
+</body>
+</html>

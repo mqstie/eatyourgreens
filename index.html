@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+Home Page
+index.html
+
+Amy Anderson
+40542677
+
+Web Tech Coursework
+-->
+<html>
+<head>
+	<title>Eat Your Greens - Home</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
+	
+	<!--Meta data for SEO-->
+	<meta name="description" content="collection of vegetarian recipes">
+	<meta name="keywords" content="recipes, vegetarian, meals, vegetables, vegan" />
+</head>
+<body>
+	<section class="stickyContent">
+	<header>
+		<div class="headerContainer">
+			<img class="logo" src="Images/logo.png" alt="Picture showcasing Eat your Greens logo">
+		</div>
+	</header>
+	
+	<nav>
+		<ul class="navbar">
+			<li><a href="index.html" class="navlink">Home</a></li>
+			<li><a href="About.html" class="navlink">About</a></li>
+			<li>
+				<div class="dropdown">
+					<p class="dropdownLabel">Recipe Categories</p>
+					<div class="dropdownContent">
+						<table>
+							<tr>
+								<td><a href="Categories/Salads.html">Salad & Stir-Fry</a></td>
+								<td><a href="Categories/Soups.html">Soup & Stew</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pasta.html">Fresh Pasta</a></td>
+								<td><a href="Categories/Curry.html">Curry & Chilli</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pies.html">Pie & Pastry</a></td>
+								<td><a href="Categories/Treats.html">Sweet Treats</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</nav>
+	</section>
+	<main>
+		<!-- carousel container -->
+		<div class="carouselContainer">
+
+			<!-- images with numbers and captions -->
+			<div class="imageCarouselContent">
+				<img src="Images/VegSkewer.jpg" style="width:100%"> <!--width fits 100% to main-->
+				<div class="text">Vegetable Skewers</div>
+			</div>
+
+			<div class="imageCarouselContent">
+				<img src="Images/VegSoup.png" style="width:100%">
+				<div class="text">Vegetable Soup</div>
+			</div>
+
+			<div class="imageCarouselContent">
+				<img src="Images/PastaBake.png" style="width:100%">
+				<div class="text">Pasta Bake</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="nextImage(-1)">&#10094;</a> <!--inserts arrow symbols-->
+			<a class="next" onclick="nextImage(1)">&#10095;</a> <!--inserts arrow symbols-->
+		</div>
+		<br/>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="carouselDot" onclick="currentSlide(1)"></span>
+			<span class="carouselDot" onclick="currentSlide(2)"></span>
+			<span class="carouselDot" onclick="currentSlide(3)"></span>
+		</div>
+		<br/>
+	</main>
+	
+	<section id="homeBar">
+		<div id="descContainer">
+			<!--main headline for page, labels table of categories below-->
+			<h1 class="recipeCategoryDesc">Recipe Categories</h1>
+			<p class="recipeCategoryDesc">Not sure what you are looking for but know you want some of the best recipes in our range? See our full range of recipe categories below! </p>
+		</div>
+	</section>
+		
+	<main>
+		<!--menu for recipe categories-->
+		<section class="categoryContainer">
+				<div class="categoryItem">
+					<!--Each table data (box) contains an image, headline and text-->
+					<img src="Images/CarrotSoup.jpg" class="midsquare" alt="Picture of carrot soup with crusty roll">
+					<h3>Hearty Soups & Stews</h3>
+					<p class="caption">Are you a lover of yummy soup and stew? 
+					<br/> Click <a href="Categories/Soups.html">here</a> for more.</p>
+				</div>
+				<div class="categoryItem">
+					<img src="Images/FigCheese.jpg" class="midsquare" alt="Picture of fig and cheese salad">
+					<h3>Quick Salads & Stir Fry</h3>
+					<p class="caption">In need of a quick and simple meal? 
+					<br/> Click <a href="Categories/Salads.html">here</a> for more.</p>
+				</div>
+				<div class="categoryItem">
+					<img src="Images/Pasta.jpg" class="midsquare" alt="Picture of fresh tomato spaghetti with basil leaves">
+					<h3>Fresh Pasta</h3>
+					<p class="caption">Fresh pasta recipes for the whole family! 
+					<br/> Click <a href="Categories/Pasta.html">here</a> for more.</p>
+				</div>
+				<div class="categoryItem">
+					<img src="Images/GreenCurry.jpg" class="midsquare" alt="Picture of thai green curry with chilli pepper garnish">
+					<h3>Spicy Curry & Chilli</h3>
+					<p class="caption">Want to spicy up your dinner tonight? 
+					<br/> Click <a href="Categories/Curry.html">here</a> for more.</p>
+				</div>
+				<div class="categoryItem">
+					<img src="Images/ApplePie.jpg" class="midsquare" alt="Picture of baked apple pie and some freshly picked cooking apples">
+					<h3>Hot Pies & Pastry</h3>
+					<p class="caption">Want to test some of your pastry skills? 
+					<br/> Click <a href="Categories/Pies.html">here</a> for more.</p>
+				</div>
+				<div class="categoryItem">
+					<img src="Images/Eclair.jpg" class="midsquare" alt="Picture of atrawberries and cream eclair sweet treat">
+					<h3>Sweet Treats</h3>
+					<p class="caption">Sweet treats to end your night on a high! 
+					<br/> Click <a href="Categories/Treats.html">here</a> for more.</p>
+				</div>
+		</section>	
+	</main>
+	
+	<footer>
+		<section>
+			<ul class="footerList">
+				<li><strong>Partnership</strong></li>
+				<li>Websites</li>
+				<li>Social Media</li>
+				<li>Blogs</li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>About</strong></li>
+				<li>Eat Your Greens</li>
+				<li><a href="https://vegsoc.org/info-hub/definition/">Vegetarianism</a></li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>Documents</strong></li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		
+			<img src="Images/whiteLogo.png">
+			
+			<div>
+				<br/>
+			</div>
+		
+			<p> &copy All rights reserved 2023 </p>
+			<p>Want to send in your own recipes? Submit them <a href="SubmitRecipes.html">here</a></p>
+			
+		</section>
+	</footer>
+	
+	<script>
+		// Image Carousel JS
+		let index = 1; //defines index at 1 by default
+		showSlides(index); //calls function showSlides
+
+		// Finds current slide
+		function currentSlide(n) {
+			index = n;
+			showSlides(index); //calls function
+		}
+		
+		// Next/previous controls - increases or decreses index by 1
+		function nextImage(n) { 
+			index += n;
+			showSlides(index); //calls function
+		}
+
+		function showSlides(n) {
+			let counter; //loop counter
+			let slides = document.getElementsByClassName("imageCarouselContent"); //finds images by class name, automatically assigns to array
+			let dots = document.getElementsByClassName("carouselDot"); //finds navigation dots by class name, automatically assigns to array
+			
+			if (n > slides.length) { //resets to first slide if full carousel is complete
+				index = 1
+			}
+			
+			if (n < 1) { //sets index to last slide in array
+				index = slides.length
+			}
+			
+			for (counter = 0; counter < slides.length; counter++) { //for loop to run for the full array
+				slides[counter].style.display = "none"; //hides carousel content
+			}
+			
+			for (counter = 0; counter < dots.length; counter++) {
+				dots[counter].className = dots[counter].className.replace(" active", ""); //changes the active navigational dot
+			}
+			
+			slides[index-1].style.display = "block"; //sets current image to show
+			dots[index-1].className += " active"; //changes active navigational dot
+		}
+	</script>
+</body>
+</html>

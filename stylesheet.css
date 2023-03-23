@@ -1,0 +1,493 @@
+/*
+External Stylesheet
+stylesheet.css
+
+Amy Anderson
+40542677
+
+Web Tech Coursework
+*/
+
+body{
+	font-family:Verdana;
+	margin:0px;
+}
+
+h1{
+	font-size:24px;
+}
+
+
+main{
+	/*general styles*/
+	background-color:white;
+	width:1000px;
+	margin:auto;
+	/*text styles*/
+	text-align:left;
+}
+	 
+header,footer{
+	background-color:#87BFA9; /*edit colour using hexcode*/
+	height:100px;
+	width:100%;
+}
+
+.stickyContent{
+	position:sticky;
+	top:0;
+	z-index:2;
+	margin-left:0;
+	width:100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+	
+	
+	
+	
+
+/* Navigation Bar Styling */
+nav{
+	background-color:#5b8f7b;
+	margin:auto;
+	margin-top:-16px;
+}
+
+.navbar{
+	list-style-type:none;
+	margin:auto;
+	margin-top:15px;
+	height:30px;
+	width:1000px;
+}
+
+.navlink, .dropdownLabel{
+	display:block;
+	float:left;
+	padding:5px 20px 5px;
+	text-decoration:none;
+	color:white;
+}
+
+.navbar a:hover, .dropdown:hover{
+	background-color:#3c5d50;
+}
+.dropdownContent a:hover{
+	background-color:#f0f0f0;
+}
+
+.headerContainer{
+	display:block;
+	width:1000px;
+	margin:auto;
+}
+
+/* Drop-down Navigation */
+.dropdown{
+	display:inline-block;
+	position:relative;
+	width:285px;
+	float:left;
+}
+
+.dropdownLabel{
+	margin-top:0px;
+	margin-bottom:20px;
+	width:auto;
+	height:0px;
+}
+
+.dropdownContent{
+	display:none;
+	position:absolute;
+	margin-top:30px;
+	overflow:auto;
+	width:285px;
+	background-color:white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:2;
+}
+
+/* on hover, show dropdown content */
+.dropdown:hover .dropdownContent, .dropdownContent:hover{
+	display:block;
+}
+
+.dropdownContent a{
+	display:block;
+	color:black;
+	padding:5px 10px 5px;
+	text-decoration:none;
+}
+
+
+
+
+
+/* Recipe Categories Heading/Bar */
+.recipeCategoryDesc{
+	color:white;
+	text-align:center;
+}
+
+.descContainer{
+	width:1000px;
+	margin:auto;
+}
+
+#homeBar, #aboutBar{
+	background-color:#5b8f7b;
+	height:125px;
+	width:100%;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding:10px 0px 10px;
+}
+
+/* About Page */
+.aboutImage{
+	float:left;
+	margin-right:19px;
+	margin-bottom:10px;
+}
+
+#sendRecipeButton{
+	color:white;
+	background:transparent;
+	border-color:white;
+	border-width:3px;
+	border-style:solid;
+	width:15%;
+	height:40px;
+	margin:auto;
+	display:block;
+	font-size:16px;
+}
+
+#aboutBar{
+	height:150px;
+}
+
+
+
+
+
+/* Category Menu Styling */
+.categoryContainer,.recipeContainer{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex;
+	margin:auto;
+	width:1040px;
+}
+
+.categoryItem{
+	padding-right:30px;
+	margin-bottom:20px;
+}
+
+.midsquare, .aboutImage{
+	/*images*/
+	width:314px;
+	height:314px;
+	display:block;
+}
+
+#figCheeseDetails, #veggieSoupDetails, #carrotSoupDetails, #leekPotatoDetails,
+#lentilDetails, #beanDetails, #caponataDetails, #tomatoPastaDetails,
+#mushroomPastaDetails, #lentilBologneseDetails, #pestoDetails, #macaroniDetails,
+#lemonSpinachDetails{
+	display:none;
+}
+
+
+.caption{
+	font-size:14px;
+	margin-top:-10px;
+	width:314px;
+}
+
+
+.logo{
+	height:100px;
+}
+
+.line{
+	height:10px;
+	background-color:#87BFA9;
+	clear:left;
+	width:1000px;
+}
+
+/* back links */
+.backIcon{
+	width:15px;
+	margin-right:10px;
+	margin-top:3px;
+	display:block;
+	float:left;
+}
+	
+#backButton{
+	height:15px;
+}
+
+.chefImage{
+	border-radius:50%;
+	width:175px;
+	margin-top:30px;
+	margin-right:30px;
+	float:left;
+}
+
+.chefDesc{
+	height:200px;
+	margin-top:30px;
+}
+
+
+
+
+/* Recipe Page Styling Specifics */
+.starRating{
+	float:left;
+	display:block;
+	width:30px;
+	margin-top:-10px;
+}
+
+.recipeImage{
+	width:500px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+	
+.recipeInfoList{
+	list-style-type:none;
+	margin-bottom:75px;
+}
+	
+.methodBox{
+	width:500px;
+	margin-right:20px;
+	justify-content:left;
+}
+
+.methodBox audio{
+	margin-bottom:30px;
+}
+
+/* button on recipe page for nutritional information */
+.nutritionButton{
+	height:40px;
+	border-width:3px;
+	border-color:#5b8f7b;
+	border-style:solid;
+	background-color:white;
+	color:#5b8f7b;
+	margin-top:25px;
+}
+
+/* appears when Nutritional Information button is selected */
+#overlay{
+	display:none; /* Hidden by default, will change with JS */
+	position:fixed; /* Above content */
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5); /* Black background with opacity */
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+/* displays nutritional information neatly in a table */
+.nutritionInfoTable{
+	background-color:white;
+	padding:15px;
+	margin:auto;
+	border-radius:10px;
+	margin-top:200px;
+}
+
+/* Footer Styling */
+.footerList{
+	list-style-type:none;
+	font-size:14px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:30px;
+	margin-top:30px;
+	z-index:0;
+}
+
+.footerList a{
+	text-decoration:none;
+	color:white;
+}
+
+footer div{
+	height:5px;
+	width:750px;
+	background-color:white;
+	margin:auto;
+	clear:left;
+	margin-bottom:30px;
+}
+
+footer, .shortPageFooter{
+	height:240px;
+	margin-top:30px;
+	color:white;
+	background-color:#5b8f7b;
+	z-index:0;
+}
+
+.shortPageFooter{
+	position:fixed;
+	bottom:0;
+}
+
+footer section{
+	width:800px;
+	margin:auto;
+	margin-top:10px;
+}
+
+footer p{
+	margin-left:40px;
+	font-size:14px;
+}
+
+footer a{
+	color:white;
+}
+	
+footer img{
+	margin-top:20px;
+	margin-left:20px;
+	width:200px;
+}
+
+
+
+
+
+/* Form Styling Specifics */
+#submitRecipeForm{
+	background-color:#f0f0f0;
+	padding:15px;
+	width:970px;
+}
+
+input, textarea{
+	margin-bottom:5px;
+	font-family:Verdana;
+}
+
+#formLogo{
+	float:right;
+	width:200px;
+	opacity:0.5;
+	margin-right:10px;
+}
+
+#formFooter{
+	opacity:0.5;
+}
+
+#submitForm, #resetForm{
+	width:100px;
+	padding:10px;
+	border-style:none;
+	border-radius:5px;
+	background-color:#87BFA9;
+	color:#283e36;
+	margin-top:20px;
+}
+
+#resetForm{
+	background-color:#ff4d4d;
+	color:#660000;
+}
+
+#formConfirmation{
+	background-color:#87BFA9;
+	color:#283e36;
+	padding:1px 10px 3px;
+	margin-bottom:30px;
+	display:none;
+}
+
+
+
+
+/* Image Carousel */
+.carouselContainer{
+	max-width:1000px; /*full width of main*/
+	position:relative;
+	margin:auto;
+}
+
+/* Hide content by default */
+.imageCarouselContent{
+	display:none;
+}
+
+/* buttons */
+.prev, .next{
+	color:white;
+	position:absolute;
+	width:auto;
+	margin-top:-22px;
+	font-weight:bold;
+	font-size:20px;
+	top:50%; /*halfway down container*/
+	padding:20px;
+	transition:0.6s ease; /*fades!*/
+	border-radius:0 10% 10% 0; /*applies border to 2/4 corners to keep seamless*/
+	z-index:1;
+}
+
+/* next button justified right */
+.next{
+	right: 0; /*hits the right side of container*/
+	border-radius: 10% 0 0 10%; /*flips border for other side*/
+	z-index:1;
+}
+
+/* When hovered over, change background colour */
+.prev:hover, .next:hover{
+	background-color: rgba(60,93,80,0.75); /* 75% opactiy */
+}
+
+/* Caption Text */
+.text{
+	color:#5b8f7b;
+	background-color:white;
+	font-size:24px;
+	font-weight:bold;
+	padding:8px 20px;
+	position:absolute; /* above content */
+	bottom:12px;
+	width:auto;
+	text-align:left;
+}
+
+
+/* The dots/bullets/indicators */
+.carouselDot{
+	height:16px;
+	width:16px;
+	margin:0 5px;
+	background-color:#bbb;
+	border-radius:50%; /*creates circle */
+	display:inline-block;
+	transition:background-color 0.6s ease; 
+}
+
+.active, .carouselDot:hover{
+	background-color: #717171;
+}

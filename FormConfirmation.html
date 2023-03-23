@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+Form Confirmation Page
+FormConfirmation.html
+
+Amy Anderson
+40542677
+
+Web Tech Coursework
+-->
+<html>
+<head>
+	<title>Eat Your Greens - Thank You!</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+<body>
+	<section class="stickyContent">
+	<header>
+		<div class="headerContainer">
+			<img class="logo" src="Images/logo.png" alt="Picture showcasing Eat your Greens logo">
+		</div>
+	</header>
+	
+	<nav>
+		<ul class="navbar">
+			<li><a href="index.html" class="navlink">Home</a></li>
+			<li><a href="About.html" class="navlink">About</a></li>
+			<li>
+				<div class="dropdown">
+					<p class="dropdownLabel">Recipe Categories</p>
+					<div class="dropdownContent">
+						<table>
+							<tr>
+								<td><a href="Categories/Salads.html">Salad & Stir-Fry</a></td>
+								<td><a href="Categories/Soups.html">Soup & Stew</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pasta.html">Fresh Pasta</a></td>
+								<td><a href="Categories/Curry.html">Curry & Chilli</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pies.html">Pie & Pastry</a></td>
+								<td><a href="Categories/Treats.html">Sweet Treats</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</nav>
+	</section>
+	<main>
+		<h1>Thank You for Your Submission!</h1>
+		<p>We have now been notified of your recipe submission, thank you for helping our cause! We will
+		send you updates by your preferred contact method soon!</p>
+		<p><em>- The Eat Your Greens Team</em></p>
+		
+		<br/>
+		<div id="backButton">
+			<img src="Images/Arrow.png" class="backIcon">
+			<p>Back to <a href="About.html">About Us</a></p>
+		</div>
+		<br/>
+		
+		<div class="line">
+			<br/>
+		</div>
+		
+		<h1>Want to Submit Another Recipe?</h1>
+		
+		<form id="submitRecipeForm" action="FormConfirmation.html">
+			<img src="Images/logo.png" id="formLogo">
+			<h3 style="margin-top:2px;">Your Information</h3>
+			
+			<label for="name">Name:*</label><br>
+			<input type="text" id="name" name="name" size="30" required><br>
+			
+			<label for="email">Email:*</label><br>
+			<input type="email" id="email" name="email" size="30" required><br>
+			
+			<label for="telephone">Telephone:</label><br>
+			<input type="text" id="telephone" name="telephone" minlength="10" maxlength="13"><br>
+			
+			<label for="aboutChef">About You:</label><br>
+			<textarea id="aboutChef" name="aboutChef" rows="8" cols="100">Write a little bit about yourself! Culinary experience, passion for all things food?
+			</textarea>
+			
+			<br/>
+			
+			<h3 style="margin-top:2px;">Recipe Information</h3>
+			
+			<label for="rName">Recipe Name:*</label><br>
+			<input type="text" id="rName" name="rName" size="30" maxlength="30" required><br>
+			
+			<label for="rDesc">Description:*</label><br>
+			<textarea id="rDesc" name="rDesc" rows="8" cols="100" required></textarea><br>
+			
+			<label for="rMethod">Method:*</label><br>
+			<textarea id="rMethod" name="rMethod" rows="8" cols="100" required></textarea><br/>
+			
+			<label for="rIngredients">Ingredients:*</label><br>
+			<textarea id="rIngredients" name="rIngredients" rows="8" cols="100"></textarea>
+			
+			<br/>
+			
+			<input type="submit" value="Submit" id="submitForm">
+			<input type="reset" id="resetForm">
+			<br/>
+			
+			<p id="formFooter">* required</p>
+					
+		</form>
+		
+	</main>
+	<footer>
+		<section>
+			<ul class="footerList">
+				<li><strong>Partnership</strong></li>
+				<li>Websites</li>
+				<li>Social Media</li>
+				<li>Blogs</li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>About</strong></li>
+				<li>Eat Your Greens</li>
+				<li><a href="https://vegsoc.org/info-hub/definition/">Vegetarianism</a></li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>Documents</strong></li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		
+			<img src="Images/whiteLogo.png">
+			
+			<div>
+				<br/>
+			</div>
+		
+			<p> &copy All rights reserved 2023 </p>
+			<p>Want to send in your own recipes? Submit them <a href="SubmitRecipes.html">here</a></p>
+			
+		</section>
+	</footer>
+</body>
+</html>

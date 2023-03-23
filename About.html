@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+About Page
+About.html
+
+Amy Anderson
+40542677
+
+Web Tech Coursework
+-->
+<html>
+<head>
+	<title>Eat Your Greens - About</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
+	
+	<!--Meta data for SEO-->
+	<meta name="description" content="about Eat Your Greens">
+	<meta name="keywords" content="eat your greens, recipes, vegetarian business, vegetarianism" />
+</head>
+<body>
+	<section class="stickyContent">
+	<header>
+		<div class="headerContainer">
+			<img class="logo" src="Images/logo.png" alt="Picture showcasing Eat your Greens logo">
+		</div>
+	</header>
+	
+	<nav>
+		<ul class="navbar">
+			<li><a href="index.html" class="navlink">Home</a></li>
+			<li><a href="About.html" class="navlink">About</a></li>
+			<li>
+				<div class="dropdown">
+					<p class="dropdownLabel">Recipe Categories</p>
+					<div class="dropdownContent">
+						<table>
+							<tr>
+								<td><a href="Categories/Salads.html">Salad & Stir-Fry</a></td>
+								<td><a href="Categories/Soups.html">Soup & Stew</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pasta.html">Fresh Pasta</a></td>
+								<td><a href="Categories/Curry.html">Curry & Chilli</a></td>
+							</tr>
+							<tr>
+								<td><a href="Categories/Pies.html">Pie & Pastry</a></td>
+								<td><a href="Categories/Treats.html">Sweet Treats</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</nav>
+	</section>
+	<main>
+		<div>
+			<h1>About Us</h1>
+			<p><strong>A word from our founder:</strong> As a vegetarian myself, I know how important it is to find suitable supplements for meat 
+			within the diet and how it is easy to create meals that don’t contain the necessary minerals and vitamins
+			that people must consume daily. What I hope to achieve is to create a collective of recipes from 
+			different cultural backgrounds, using various ingredients, and compile them into a meaningful and 
+			user-centred website. </p>
+			<p><em>- Amy Anderson</em></p>
+			
+			<img class="aboutImage" src="Images/FigCheese.jpg">
+			<img class="aboutImage" src="Images/SweetPotatoCurry.png">
+			<img class="aboutImage" src="Images/TomatoPasta.png">
+			
+			<p style="margin-top:50px;">Here at Eat Your Greens we strive to provide the top-quality, nutrient rich recipes and meals for those
+			following vegetarianism, or even those who would like to try a meat-free meal every once in a while. A vegetarian
+			diet does not contain any meat, poultry or seafood, stripping a meal of much needed proteins, however, the
+			Earth shall provide alternatives in the form of protein-rich plants and foods with much needed vitamins and minerals.</p>
+		</div>
+	</main>
+	
+	<div id="aboutBar">
+		<div class="descContainer">
+			<!--main headline for page, labels table of categories below-->
+			<h1 class="recipeCategoryDesc">Join Our Cause!</h1>
+			<p class="recipeCategoryDesc">Want to help us on our journey of nutrition and education? Send us your recipes today below! </p>
+			<button id="sendRecipeButton" onclick="window.location.href='SubmitRecipes.html'">
+				Send Recipes
+			</button>
+		</div>
+	</div>
+		
+	<main>
+		<div>
+			<h1>Our Chefs</h1>
+			<p>Meet our lovely award-winning chefs and contributors below. Want to be a part of this list? Just join our cause above and your 
+			recipes could be featured on our website along with these infamous names...</p>
+			
+			<!--Information about the chef's responsible-->
+			<img src="Images/Chef.png" class="chefImage">
+			<article class="chefDesc">
+				<h3>Chef Michael Longlea</h3>
+				<p>London-based chef Michael Longlea has been developing his skills in exquisite vegetarian
+				cuisine since his early days in India where 38% of the population are vegetarians. 
+				With a passion for creativity using traditional flavours with a modern twist, he has 
+				established himself as a Michelin star chef.</p>
+				<p>His recipes here at Eat Your Greens help those following vegetarianism get the all
+				importnat nutrients they need, whilst creating these fresh and flavoursome meals.</p>
+			</article>
+			
+			<img src="Images/Chef2.png" class="chefImage">
+			<article class="chefDesc">
+				<h3>Chef Clark Jackson</h3>
+				<p>Born in Canada and having grown up in Switzerland, Clark was 24 when he completed my final year at 
+				catering training, having his first professional internship at Hotel Royale in Geneva. Ever since, he states he
+				has a burning passion for cuisine, and he always loves to provide accessible recipes for all.</p>
+				<p>"I found myself here at Eat Your Greens to share these colourful recipes with the world, in hopes
+				that vegetarians and meat-eaters alike can enjoy these plant-based meals."</p>
+			</article>
+		</div>
+	</main>
+	<footer>
+		<section>
+			<ul class="footerList">
+				<li><strong>Partnership</strong></li>
+				<li>Websites</li>
+				<li>Social Media</li>
+				<li>Blogs</li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>About</strong></li>
+				<li>Eat Your Greens</li>
+				<li><a href="https://vegsoc.org/info-hub/definition/">Vegetarianism</a></li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>Documents</strong></li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		
+			<img src="Images/whiteLogo.png">
+			
+			<div>
+				<br/>
+			</div>
+		
+			<p> &copy All rights reserved 2023 </p>
+			<p>Want to send in your own recipes? Submit them <a href="SubmitRecipes.html">here</a></p>
+			
+		</section>
+	</footer>
+</body>
+</html>
