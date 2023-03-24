@@ -451,11 +451,12 @@ input, textarea{
 	color:white;
 	position:absolute;
 	width:auto;
+	height:auto;
 	margin-top:-22px;
 	font-weight:bold;
 	font-size:20px;
-	top:50%; /*halfway down container*/
-	padding:20px;
+	top:0; /*halfway down container*/
+	padding:279px 30px 279px;
 	transition:0.6s ease; /*fades!*/
 	border-radius:0 10% 10% 0; /*applies border to 2/4 corners to keep seamless*/
 	z-index:1;
@@ -470,7 +471,7 @@ input, textarea{
 
 /* When hovered over, change background colour */
 .prev:hover, .next:hover{
-	background-color: rgba(60,93,80,0.75); /* 75% opactiy */
+	background-color: rgba(60,93,80,0.50); /* 50% opactiy */
 }
 
 /* Caption Text */
@@ -484,8 +485,8 @@ input, textarea{
 	bottom:12px;
 	width:auto;
 	text-align:left;
+	z-index:2;
 }
-
 
 /* The dots/bullets/indicators */
 .carouselDot{
