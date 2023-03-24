@@ -438,6 +438,7 @@ input, textarea{
 
 .carouselImage{
 	animation:fadeIn 1s;
+	width:100%;
 }
 
 @keyframes fadeIn{
