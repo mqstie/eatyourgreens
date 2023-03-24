@@ -436,6 +436,15 @@ input, textarea{
 	display:none;
 }
 
+.carouselImage{
+	animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+	0% { opacity: 0.5;}
+	100% { opacity: 1;}
+}
+
 /* buttons */
 .prev, .next{
 	color:white;
