@@ -485,7 +485,7 @@ input, textarea{
 	bottom:12px;
 	width:auto;
 	text-align:left;
-	z-index:2;
+	z-index:1;
 }
 
 /* The dots/bullets/indicators */
