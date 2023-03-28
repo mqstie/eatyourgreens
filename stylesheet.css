@@ -197,7 +197,8 @@ nav{
 #figCheeseDetails, #veggieSoupDetails, #carrotSoupDetails, #leekPotatoDetails,
 #lentilDetails, #beanDetails, #caponataDetails, #tomatoPastaDetails,
 #mushroomPastaDetails, #lentilBologneseDetails, #pestoDetails, #macaroniDetails,
-#lemonSpinachDetails{
+#lemonSpinachDetails, #sweetPotatoCurryDetails, #kidneyBeanDetails,
+#cauliflowerDetails, #aubergineDetails, #butternutDetails, #chipotleDetails {
 	display:none;
 }
 
