@@ -195,7 +195,11 @@ nav{
 }
 
 /* Sets each 'detailed' mouseover image to hidden by default*/
-#figCheeseDetails, #veggieSoupDetails, #carrotSoupDetails, #leekPotatoDetails, #lentilDetails, #beanDetails, #caponataDetails, #tomatoPastaDetails, #mushroomPastaDetails, #lentilBologneseDetails, #pestoDetails, #macaroniDetails, #lemonSpinachDetails, #sweetPotatoCurryDetails, #kidneyBeanDetails, #cauliflowerDetails, #aubergineDetails, #butternutDetails, #chipotleDetails, #brownieDetails, #lemonCheesecakeDetails, #eclairDetails, #tiramsuDetails, #appleCrumbleDetails, #raspberryDetails{
+#figCheeseDetails, #veggieSoupDetails, #carrotSoupDetails, #leekPotatoDetails, #lentilDetails, #beanDetails, #caponataDetails, #tomatoPastaDetails, 
+#mushroomPastaDetails, #lentilBologneseDetails, #pestoDetails, #macaroniDetails, #lemonSpinachDetails, #sweetPotatoCurryDetails, #kidneyBeanDetails, 
+#cauliflowerDetails, #aubergineDetails, #butternutDetails, #chipotleDetails, #brownieDetails, #lemonCheesecakeDetails, #eclairDetails, #tiramsuDetails, 
+#appleCrumbleDetails, #raspberryDetails, #mushroomPieDetails, #leekPotatoPieDetails, #spiralPieDetails, #spicedLentilDetails, #squashFetaDetails,
+#cheeseOnionDetails{
 	display:none;
 }
 
