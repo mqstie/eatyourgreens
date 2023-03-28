@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Recipe Page (Strawberry Eclair)
+Eclair.html
+Amy Anderson
+40542677
+Web Tech Coursework
+-->
+<html>
+<head>
+	<title>Eat Your Greens - Strawberry Eclairs</title>
+	<link rel="stylesheet" href="../stylesheet.css"/>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+<body>
+	<section class="stickyContent">
+	<header>
+		<div class="headerContainer">
+			<img class="logo" src="../Images/logo.png" alt="Picture showcasing Eat your Greens logo">
+		</div>
+	</header>
+	
+	<nav>
+		<ul class="navbar">
+			<li><a href="../index.html" class="navlink">Home</a></li>
+			<li><a href="../About.html" class="navlink">About</a></li>
+			<li>
+				<div class="dropdown">
+					<p class="dropdownLabel">Recipe Categories</p>
+					<div class="dropdownContent">
+						<table>
+							<tr>
+								<td><a href="../Categories/Salads.html">Salad & Stir-Fry</a></td>
+								<td><a href="../Categories/Soups.html">Soup & Stew</a></td>
+							</tr>
+							<tr>
+								<td><a href="../Categories/Pasta.html">Fresh Pasta</a></td>
+								<td><a href="../Categories/Curry.html">Curry & Chilli</a></td>
+							</tr>
+							<tr>
+								<td><a href="../Categories/Pies.html">Pie & Pastry</a></td>
+								<td><a href="../Categories/Treats.html">Sweet Treats</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</nav>
+	</section>
+	<main>
+		<!--image of dish-->
+		<img src="../Images/Eclair.jpg" class="recipeImage">
+		
+		<article class="recipeDesc">
+			<!--main headline for page-->
+			<h1>Strawberry Eclairs</h1>
+			<div class="starContainer">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+				<img src="../Images/Star.png" class="starRating">
+			</div>
+			<br/>
+			
+			<!--return button to category page-->
+			<div id="backButton">
+			<img src="../Images/Arrow.png" class="backIcon">
+			<p>Back to <a href="../Categories/Treats.html">Sweet Treats</a></p>
+			</div>
+			<br/>
+			
+			<!--description of recipe-->
+			<p>These little sweet treats are homemade and taste it! With whipped cream and fresh strawberries, these eclairs are a sweet and 
+			perfect dessert to enjoy this upcoming summer. Light and airy pastry is easy to make, top with some icing sugar and you are 
+			on your way to pastry heaven.</p>
+			<br/>
+			
+			<!--important information-->
+			<ul class="recipeInfoList">
+				<li>Preparation Time: <em>20 minutes</em></li>
+				<li>Cooking Time: <em>25 minutes</em></li>
+				<li>Serves: <em>20 mini eclairs</em></li>
+				<li>Difficulty: <em>Medium</em></li>
+			</ul>
+			
+			<button class="nutritionButton" type="button" onclick="nutritionInfo()">Nutritional Information</button>
+		</article>
+		
+		<div class="line">
+			<br/>
+		</div>
+		
+		<section class="recipeContainer">
+			<div class="methodBox">
+				<h3>Method</h3>
+				<p>1. Place butter, water, salt and sugar in a pan on low heat. Keep stirring till the butter melts. Once the butter melts, 
+				increase the temperature and bring it all to a boil. As soon as the mixture starts simmering, remove pan from heat and all the 
+				flour at once. Beat constantly and vigorously till the dough comes together.</p>
+				<p>2. Now put the pan back on the gas stove. Continue to cook the dough by beating it constantly. You want to cook till the 
+				dough dries out, it will take 2 minutes or so. You will know it's done when you see a thin film of dough on the bottom of the pan.</p>
+				<p>3. Now immediately transfer the dough into the steel bowl of you stand mixer. Beat for a minute or so on medium speed so that the dough cools down a bit. 
+				Beating also helps in developing the gluten. With the mixture running on medium speed, start adding the eggs one at a time. Add the next egg only after the 
+				first one has been well incorporated.</p>
+				<p>4. Once all eggs are incorporated, the dough will be elastic and shiny. It should also pass the "string test" - if you place 
+				a little dough in between your thumb and forefinger and then pull them apart, the dough should form a string. If the dough 
+				hasn't reached this stage, you may need to add 1 more egg.</p>
+				<p>5. Transfer dough into a pastry bag fitted with 1/2 inch round tip or a french tip. Line 2 baking sheets with parchment paper and pre-heat oven to 425 F 
+				degrees. Pipe tubes 4 x 1 inches or 5 inches for bigger eclairs. Remember to leaves at least 2 inches of space between each eclair as they puff up during 
+				baking. Bake the eclairs at 425 F degrees for around 12 minutes or till the eclairs start showing little color. Then reduce the temperature to 375 F degrees 
+				and baked for additional 12-15 minutes or till evenly brown. Take out of the oven and allow the eclairs to cool down.</p>
+				<p>6. Place the steel bowl and whisk attachment in the refrigerator for 15 minutes. Start beating the cream at medium speed. Add in sugar, vanilla extract 
+				and increase the mixer speed to medium-high. Continue to beat till the cream develops stiff peaks. Be careful not to over-beat. Cut each eclair shell into half. 
+				Fill the bottom half with whipped cream and strawberries. Place the upper half on top. Dust with powdered sugar and serve immediately!</p>
+				<br/>
+				
+				<!-- audio - voice of method spoken -->
+				<audio controls>
+					<source src=".ogg" type="audio/ogg">
+					<source src=".mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div>
+				<h3>Ingredients</h3>
+				<ul>
+					<li><strong>100g</strong> unsalted butter, cubed</li>
+					<li><strong>1/4 tsp</strong> salt</li>
+					<li><strong>1/4 tsp</strong> granulated white sugar</li>
+					<li><strong>200ml</strong> water</li>
+					<li><strong>140g</strong> all purpose flour</li>
+					<li><strong>4 or 5</strong> large eggs</li>
+				</ul>
+			</div>
+		</section>
+		
+		<div class="line">
+			<br/>
+		</div>
+		
+		<!--Information about the chef's responsible-->
+		<img src="Images/Chef2.png" class="chefImage">
+		<article class="chefDesc">
+			<h3>Chef Clark Jackson</h3>
+			<p>Born in Canada and having grown up in Switzerland, Clark was 24 when he completed my final year at 
+			catering training, having his first professional internship at Hotel Royale in Geneva. Ever since, he states he
+			has a burning passion for cuisine, and he always loves to provide accessible recipes for all.</p>
+			<p>"I found myself here at Eat Your Greens to share these colourful recipes with the world, in hopes
+			that vegetarians and meat-eaters alike can enjoy these plant-based meals."</p>
+		</article>
+		
+		<!-- Nutritional Information Overlay-->
+		<div id="overlay" onclick="hideOverlay()">
+			<table class="nutritionInfoTable">
+				<tr><td><h1 style="margin-top:-5px;">Nutritional Information</h1></td></tr>
+				<tr><td><em>PER SERVING</em></td></tr>
+				<tr><td>Energy</td><td>627kcals</td></tr>
+				<tr><td>Fat</td><td>44g</td></tr>
+				<tr><td>Saturated Fat</td><td>21g</td></tr>
+				<tr><td>Carbohydrates</td><td>34g</td></tr>
+				<tr><td>Sugars</td><td>4g</td></tr>
+				<tr><td>Fibre</td><td>4g</td></tr>
+				<tr><td>Protein</td><td>21g</td></tr>
+				<tr><td>Salt</td><td>1.43g</td></tr>
+				<tr><td><em>Click outside to return</em></td></tr>
+			</table>
+		</div>
+	</main>
+	
+	<footer>
+		<section>
+			<ul class="footerList">
+				<li><strong>Partnership</strong></li>
+				<li>Websites</li>
+				<li>Social Media</li>
+				<li>Blogs</li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>About</strong></li>
+				<li>Eat Your Greens</li>
+				<li><a href="https://vegsoc.org/info-hub/definition/">Vegetarianism</a></li>
+			</ul>
+		
+			<ul class="footerList">
+				<li><strong>Documents</strong></li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		
+			<img src="../Images/whiteLogo.png">
+			
+			<div>
+				<br/>
+			</div>
+		
+			<p> &copy All rights reserved 2023 </p>
+			<p>Want to send in your own recipes? Submit them <a href="../SubmitRecipes.html">here</a></p>
+			
+		</section>
+	</footer>
+	
+	<!--javascript for this page-->
+	<script>
+		function nutritionInfo(){
+			document.getElementById("overlay").style.display = "block";
+		}
+		
+		function hideOverlay(){
+			document.getElementById("overlay").style.display = "none";
+		}
+		
+	</script>
+</body>
+</html>
