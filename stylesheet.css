@@ -194,11 +194,14 @@ nav{
 	display:block;
 }
 
+/* Sets each 'detailed' mouseover image to hidden by default*/
 #figCheeseDetails, #veggieSoupDetails, #carrotSoupDetails, #leekPotatoDetails,
 #lentilDetails, #beanDetails, #caponataDetails, #tomatoPastaDetails,
 #mushroomPastaDetails, #lentilBologneseDetails, #pestoDetails, #macaroniDetails,
 #lemonSpinachDetails, #sweetPotatoCurryDetails, #kidneyBeanDetails,
-#cauliflowerDetails, #aubergineDetails, #butternutDetails, #chipotleDetails {
+#cauliflowerDetails, #aubergineDetails, #butternutDetails, #chipotleDetails,
+#brownieDetails, #lemonCheesecakeDetails, #eclairDetails, #tiramsuDetails, 
+#appleCrumbleDetails, #raspberryDetails{
 	display:none;
 }
 
